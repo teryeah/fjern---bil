@@ -1,6 +1,6 @@
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 1) {
-        bitbot.rotatems(BBRobotDirection.Left, 40, 200)
+        bitbot.BBBias(BBRobotDirection.Left, 10)
         basic.showLeds(`
             . . # . .
             . # . . .
@@ -9,7 +9,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . # . .
             `)
     } else if (receivedNumber == 3) {
-        bitbot.rotatems(BBRobotDirection.Right, 40, 200)
+        bitbot.BBBias(BBRobotDirection.Right, 10)
         basic.showLeds(`
             . . # . .
             . . . # .
